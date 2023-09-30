@@ -52,7 +52,7 @@ public class UDPClient {
                 input = new BufferedReader(new InputStreamReader(System.in));
 
                 String message ;
-                while((message = input.readLine()) != "") {
+                while(!(message = input.readLine()).equals("")) {
 
                     buffer = message.getBytes();
 
